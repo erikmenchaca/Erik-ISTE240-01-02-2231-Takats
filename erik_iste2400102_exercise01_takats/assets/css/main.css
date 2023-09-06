@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/* CSS document to decorate my page*/
+body {
+font-family: 'Nunito', sans-serif;
+    background-color: lightblue;
+}
+/* Make the heading text to the center */
+header {
+    text-align: center;
+}
+img {
+    max-width: 100%;
+}
+/* I like my picture to be rounded :) */
+.profile > img {
+    border-radius: 100px;
+}
+/* I figured yellow to be easy to see on hyperlinks */
+.mainbody > ul> li > a:hover {
+    background-color: yellow;
+}
+.mainbody > ul> li> a:visited {
+    background-color: pink;
+}
+@media screen and (max-width: 600px) {
+    .profile {
+        
+        padding: 10px;
+        max-width: 100%;
+        text-align: center;
+    }
+    .mainbody {
+        padding: 10px;
+    }
+
+}
+@media screen and (min-width:600px)
+{
+    body {
+        padding:20px
+    }
+    .mainbody {
+        margin-left: 20em;
+    }
+    .profile {
+        float: left;
+    }
+    .flex {
+        display: flex;
+        
+    }
+    figcaption {
+        max-width: 100%;
+    }
+}
